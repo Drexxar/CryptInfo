@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CryptInfo</string>
+    <string name="index_is_calculated">Топ-100 рейтинг криптовалют.</string>
+    <string name="description_image">Логотип API CoinGecko</string>
+    <string name="developed_by">Разработано с помощью CoinGecko API</string>
+    <string name="rate_button">Оценить приложение</string>
+    <string name="about">О приложении</string>
+    <string name="crypto_icon">Иконка криптовалюты</string>
+    <string name="market_cap">Рын. капитал. $</string>
+    <string name="price">Цена $</string>
+</resources>
