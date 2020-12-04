@@ -8,4 +8,10 @@
     <string name="crypto_icon">Иконка криптовалюты</string>
     <string name="market_cap">Рын. капитал. $</string>
     <string name="price">Цена $</string>
+    <string name="market_cap_rank_text">Место в рейтинге</string>
+    <string name="market_cap_change">Изменение рын. капит. в %</string>
+    <string name="all_time_high_ath_text">Максимальная цена</string>
+    <string name="all_time_high_ath_perc">Макс. изменение цены в %</string>
+    <string name="circulating_supply">Оборотное предложение</string>
+    <string name="total_supply">Общее предложение</string>
 </resources>

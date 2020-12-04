@@ -89,6 +89,7 @@ class LatestChart {
 
             data.addEntry(Entry(date, value), 0)
             data.notifyDataChanged()
+            chart.notifyDataSetChanged()
             //смещение графика по оси Х и инициирует обновление
             chart.moveViewToX(date)
             //выделяет значение у при данном значении х в данном наборе данных
@@ -98,7 +99,7 @@ class LatestChart {
 
     //Создание и настройка набора данных
     private fun createSet(): LineDataSet {
-        val set = LineDataSet(null, "price, USD")
+        val set = LineDataSet(null, "Цена, USD")
         set.mode = LineDataSet.Mode.CUBIC_BEZIER
         set.cubicIntensity = 0.2f
         set.setDrawFilled(true)
@@ -107,9 +108,9 @@ class LatestChart {
         set.circleRadius = 4f
         set.setCircleColor(Color.BLACK)
         set.highlightLineWidth = 1.2f
-        set.highLightColor = context.resources.getColor(R.color.colorAccent)
+        set.highLightColor = context.resources.getColor(R.color.colorPrimary)
         set.color = Color.BLACK
-        set.fillColor = Color.BLACK
+        set.fillColor = Color.WHITE
         set.enableDashedHighlightLine(10f, 5f, 0f)
         set.fillAlpha = 100
         set.setDrawHorizontalHighlightIndicator(true)

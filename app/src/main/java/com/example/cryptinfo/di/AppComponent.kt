@@ -1,5 +1,6 @@
 package com.example.cryptinfo.di
 
+import com.example.cryptinfo.activities.ChartActivity
 import com.example.cryptinfo.activities.MainActivity
 import com.example.cryptinfo.chart.LatestChart
 import com.example.cryptinfo.fragments.CurrenciesListFragment
@@ -22,5 +23,7 @@ interface AppComponent {
     fun inject(fragment: CurrenciesListFragment)
 
     fun inject(chart: LatestChart)
+
+    fun inject (activity: ChartActivity)
 
 }

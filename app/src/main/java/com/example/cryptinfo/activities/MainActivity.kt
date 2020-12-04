@@ -12,13 +12,9 @@ import com.google.android.gms.ads.InterstitialAd
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mInterstitialAd: InterstitialAd
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        adInit()
 
         //вызов фрагмента
         if(savedInstanceState == null){
@@ -44,27 +40,6 @@ class MainActivity : AppCompatActivity() {
                 }
         }
         return super.onOptionsItemSelected(item)
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        //добавляем межстраничную рекламу при выходе из приложения с помощью кнопки "назад"
-        showAd()
-    }
-
-    //Функция загрузки межстраничной рекламы
-    private fun showAd(){
-        if(mInterstitialAd.isLoaded){
-            mInterstitialAd.show()
-        }
-    }
-
-    //Метод инициализации межстраничного баннера
-    private fun adInit(){
-        mInterstitialAd = InterstitialAd(this)
-        mInterstitialAd.adUnitId = "ca-app-pub-9365306135013346/5748576584"
-        mInterstitialAd.loadAd(AdRequest.Builder().build())
-
     }
 
 }

@@ -17,7 +17,7 @@ interface CoinGeckoApi {
     ): Observable<List<GeckoCoin>>
 
     //запрос данных для графика
-    @GET("coins/{id}/market/chart")
+    @GET("coins/{id}/market_chart")
     fun getCoinMarketChart(
         @Path("id") id: String,
         @Query("vs_currency") vsCurrency: String = "usd",
